@@ -52,8 +52,6 @@ const Dashboard: React.FC = () => {
 
     Object.assign(food, { available: editingFood.available });
 
-    console.log(editingFood.available);
-
     const { data } = await api.put(`/foods/${editingFood.id}`, food);
 
     const newFoods = foods.filter(f => f.id !== data.id);
@@ -63,6 +61,11 @@ const Dashboard: React.FC = () => {
 
   async function handleDeleteFood(id: number): Promise<void> {
     // TODO DELETE A FOOD PLATE FROM THE API
+    const newFoods = foods.filter(f => f.id !== id);
+
+    await api.delete(`/foods/${id}`);
+
+    setFoods(newFoods);
   }
 
   function toggleModal(): void {

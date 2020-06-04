@@ -23,14 +23,6 @@
       "available": true,
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
       "id": 3
-    },
-    {
-      "image": "https://img.freepik.com/free-photo/delicious-fresh-pizza-served-wooden-table_127657-159.jpg?size=626&ext=jpg",
-      "name": "Pizza Italia",
-      "price": "70,00",
-      "description": "Muito boa, experimente.",
-      "available": true,
-      "id": 4
     }
   ]
 }
